@@ -1,9 +1,11 @@
-import { INCREASE_VALUE } from "./ActionTypes";
+import { ADD_BIRD, INCREASE_LIKES } from "./ActionTypes";
 
+export const addBird = (bird) => ({
+    type: ADD_BIRD,
+    payload: bird
+})
 
-const increaseValue = (value) => ({
-    type: INCREASE_VALUE,
-    payload:value
+export const increaseLikes = (birdId) => ({
+    type: INCREASE_LIKES,
+    payload:birdId
 });
-
-export default increaseValue;
